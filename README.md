@@ -18,18 +18,18 @@ clj -A:cljs            -> trigger for shadowcljs
 clj -A:cljs-report     -> generate build report
 ```
 ## How to connect to the browser repl
-1. Start the app dev mode
-`clj -A:cljs watch app`
-This starts:
--> html server at:      localhost:8280
--> browser test server: localhost:8290
--> nRepl server         localhost:8777
+1. Start the app dev mode  
+`clj -A:cljs watch app`  
+If everything works fine it will start:  
+-> **html server** (http://localhost:8280)  
+-> **browser test server** (http://localhost:8290)  
+-> **nRepl server** (nrepl://localhost:8777)  
 
-2. M-x cider-connect-cljs
-   | -> localhost
-   | -> 8777
-   | -> shadow
-   | -> app
+2. M-x cider-connect-cljs  
+   | -> localhost  
+   | -> 8777  
+   | -> shadow  
+   | -> app  
 
 ## Start karma
 ```
